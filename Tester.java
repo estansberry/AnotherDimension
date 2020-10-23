@@ -6,6 +6,10 @@ public class Tester{
     int[] d = {-11, - 45, -13, -3};
     int[] e = {1, 2, 150, -40};
     int[] f = {0, 0};
+    int[][] g = {{5, 4, 3}, {0}, {3, 2, 2, 2, 1}, {}, {7, 9}};
+    int[][] h = {{0}};
+    int[][] i = {{5, 4, 3}, {0}, {3, 2, 2, 2, 1}, {-3}, {7, 9}};
+    int[][] j = {{0}};
     System.out.print("Should be 10: ");
     System.out.println(ArrayOps.sum(a));
     System.out.print("Should be 1: ");
@@ -18,5 +22,14 @@ public class Tester{
     System.out.println(ArrayOps.largest(e));
     System.out.print("Should be 0: ");
     System.out.println(ArrayOps.largest(f));
+    System.out.print("Should be {12, 0, 10, 0, 16}: ");
+    ArrayOps.sumRows(g);
+    System.out.print("Should be {0}: ");
+    ArrayOps.sumRows(h);
+    System.out.print("Should be {5, 0, 3, -3, 9}: ");
+    ArrayOps.largestInRows(i);
+    System.out.print("Should be {0}: ");
+    ArrayOps.largestInRows(j);
+
   }
 }
