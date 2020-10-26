@@ -42,4 +42,18 @@ public class ArrayOps{
     }System.out.println(arrToString(newarr));
     return(newarr);
   }
+  public static int[] sumCols(int[][] matrix){
+    int[] newarr;
+    newarr = new int[matrix[0].length];
+    for (int i = 0; i < matrix[0].length; i ++){
+      int sum = 0;
+      for (int j = 0; j < matrix.length; j ++){
+        sum = sum + matrix[j][i];
+      }newarr[i] = sum;
+    }System.out.println(arrToString(newarr));
+    return(newarr);
+  }
+  public static boolean isRowMagic(int[][] matrix){
+    Boolean sumequal = true;
+  }
 }

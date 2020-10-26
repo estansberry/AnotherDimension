@@ -10,6 +10,8 @@ public class Tester{
     int[][] h = {{0}};
     int[][] i = {{5, 4, 3}, {0}, {3, 2, 2, 2, 1}, {-3}, {7, 9}};
     int[][] j = {{0}};
+    int[][] k = { {  1,  0, 12, -1 },{  7, -2,  2,  1 },{ -5, -2,  2, -9 }};
+    int[][] l = {{5, 6}, {1, 2}, {1, 0}, {10, 9}};
     System.out.print("Should be 10: ");
     System.out.println(ArrayOps.sum(a));
     System.out.print("Should be 1: ");
@@ -30,6 +32,9 @@ public class Tester{
     ArrayOps.largestInRows(i);
     System.out.print("Should be {0}: ");
     ArrayOps.largestInRows(j);
-
+    System.out.print("Should be {3, -4, 16, -9}: ");
+    ArrayOps.sumCols(k);
+    System.out.print("Should be {17, 17}: ");
+    ArrayOps.sumCols(l);
   }
 }
