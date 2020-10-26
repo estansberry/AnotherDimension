@@ -12,6 +12,7 @@ public class Tester{
     int[][] j = {{0}};
     int[][] k = { {  1,  0, 12, -1 },{  7, -2,  2,  1 },{ -5, -2,  2, -9 }};
     int[][] l = {{5, 6}, {1, 2}, {1, 0}, {10, 9}};
+    int[][] m = {{},{},{}};
     System.out.print("Should be 10: ");
     System.out.println(ArrayOps.sum(a));
     System.out.print("Should be 1: ");
@@ -36,5 +37,11 @@ public class Tester{
     ArrayOps.sumCols(k);
     System.out.print("Should be {17, 17}: ");
     ArrayOps.sumCols(l);
+    System.out.print("Should be true: ");
+    System.out.println(ArrayOps.isRowMagic(l));
+    System.out.print("Should be false: ");
+    System.out.println(ArrayOps.isRowMagic(k));
+    System.out.print("Should be true: ");
+    System.out.println(ArrayOps.isRowMagic(m));
   }
 }
