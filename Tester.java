@@ -14,7 +14,8 @@ public class Tester{
     int[][] l = {{5, 6}, {1, 2}, {1, 0}, {10, 9}};
     int[][] m = {{},{},{}};
     int[][] n = { {  1,  2, 3, 4 },{  2, 3,  4,  1 },{ 3, 4,  1, 2 } };
-    int[][] o = { {  2,  2, 2 },{  2, 2, 2 } }; 
+    int[][] o = { {  2,  2, 2 },{  2, 2, 2 } };
+    int[][] p = {{  2,  4, 2 },{  2, 2, 2 } };
     System.out.print("Should be 10: ");
     System.out.println(ArrayOps.sum(a));
     System.out.print("Should be 1: ");
@@ -51,5 +52,9 @@ public class Tester{
     System.out.println(ArrayOps.isColMagic(k));
     System.out.print("Should be true: ");
     System.out.println(ArrayOps.isColMagic(m));
+    System.out.print("Should be false: ");
+    System.out.println(ArrayOps.isLocationMagic(p, 0, 1));
+    System.out.print("Should be true: ");
+    System.out.println(ArrayOps.isLocationMagic(p, 1, 1));
   }
 }
