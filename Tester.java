@@ -13,6 +13,8 @@ public class Tester{
     int[][] k = { {  1,  0, 12, -1 },{  7, -2,  2,  1 },{ -5, -2,  2, -9 }};
     int[][] l = {{5, 6}, {1, 2}, {1, 0}, {10, 9}};
     int[][] m = {{},{},{}};
+    int[][] n = { {  1,  2, 3, 4 },{  2, 3,  4,  1 },{ 3, 4,  1, 2 } };
+    int[][] o = { {  2,  2, 2 },{  2, 2, 2 } }; 
     System.out.print("Should be 10: ");
     System.out.println(ArrayOps.sum(a));
     System.out.print("Should be 1: ");
@@ -38,10 +40,16 @@ public class Tester{
     System.out.print("Should be {17, 17}: ");
     ArrayOps.sumCols(l);
     System.out.print("Should be true: ");
-    System.out.println(ArrayOps.isRowMagic(l));
+    System.out.println(ArrayOps.isRowMagic(n));
     System.out.print("Should be false: ");
     System.out.println(ArrayOps.isRowMagic(k));
     System.out.print("Should be true: ");
-    System.out.println(ArrayOps.isRowMagic(m));
+    System.out.println(ArrayOps.isRowMagic(o));
+    System.out.print("Should be true: ");
+    System.out.println(ArrayOps.isColMagic(l));
+    System.out.print("Should be false: ");
+    System.out.println(ArrayOps.isColMagic(k));
+    System.out.print("Should be true: ");
+    System.out.println(ArrayOps.isColMagic(m));
   }
 }
