@@ -70,5 +70,10 @@ public class ArrayOps{
       sumequal = (newarr[i] == newarr[i + 1]);
     }return(sumequal);
   }
+  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+    int sumrow = sum(matrix[row]);
+    int sumcol = (sumCols(matrix))[col];
+    return(sumrow == sumcol);
+  }
 
 }
